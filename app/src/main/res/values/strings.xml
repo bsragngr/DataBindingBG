@@ -4,4 +4,6 @@
     <string name="please_enter_a_name_here">Please Enter a Name Here!</string>
     <string name="submit">Submit</string>
     <string name="start">Start</string>
+    <string name="name">Name..</string>
+    <string name="email">Email..</string>
 </resources>

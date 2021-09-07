@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="student"
+            type="com.example.databindingbg.data.Student" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,8 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="gone"
-            android:layout_margin="@dimen/standard_margin" />
+            android:layout_margin="@dimen/standard_margin"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/loadingBtn"
@@ -52,5 +58,24 @@
             android:layout_gravity="center"
             android:text="@string/start"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@{student.name}"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@{student.email}"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
     </LinearLayout>
 </layout>

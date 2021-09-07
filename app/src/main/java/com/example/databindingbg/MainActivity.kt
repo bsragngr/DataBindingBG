@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
+import com.example.databindingbg.data.Student
 import com.example.databindingbg.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.student = getStudent()
 
         binding.bindBtn.setOnClickListener {
             displayName()
@@ -43,5 +46,9 @@ class MainActivity : AppCompatActivity() {
                 loadingBtn.text = "Start"
             }
         }
+    }
+
+    private fun getStudent(): Student {
+        return Student(1, "Busra", "busragungortrakya@gmail.com")
     }
 }
