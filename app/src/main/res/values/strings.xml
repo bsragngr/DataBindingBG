@@ -6,4 +6,6 @@
     <string name="start">Start</string>
     <string name="name">Name..</string>
     <string name="email">Email..</string>
+    <string name="count">Count</string>
+    <string name="click_here">Click Here</string>
 </resources>

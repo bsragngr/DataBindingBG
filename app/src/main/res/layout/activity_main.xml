@@ -77,5 +77,22 @@
             android:textColor="@color/black"
             android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/countText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@string/count"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/clickHereBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:text="@string/click_here"
+            android:textSize="16sp"/>
+
     </LinearLayout>
 </layout>
